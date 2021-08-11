@@ -8,33 +8,46 @@
         <title>Chair Company</title>
     </head>
     <body>
-        <header>
-            <div class="fixed-top">
-                <div class="fixed-top__strapline">Strapline to go here</div>
-                <div class="fixed-top__contact">
-                    Get in touch with our expert team
-                    <span>012345 678 901</span>
+        <div class="fixed-top">
+            <div class="container__1000">
+                <div class="fixed-top--box">
+                    <div class="fixed-top__strapline">Strapline to go here</div>
+                    <div class="fixed-top__contact">
+                        Get in touch with our expert team
+                        <a href="tel:012345 678 901">012345 678 901</a>
+                    </div>
                 </div>
             </div>
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Services</li>
-                    <li>Products</li>
-                    <li>Sectors</li>
-                    <li>Quality</li>
-                    <li>News</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-            <label for="site-search">Search the site:</label>
-            <input
-                type="search"
-                id="site-search"
-                aria-label="Search through site content"
-            />
-            <button>Search</button>
+        </div>
+        <header>
+            <div class="container__1000">
+                <nav class="main-nav">
+                    <ul>
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Services</li>
+                        <li>Products</li>
+                        <li>Sectors</li>
+                        <li>Quality</li>
+                        <li>News</li>
+                        <li>Contact</li>
+                    </ul>
+                </nav>
+                <div class="header-search">
+                    <label class="sr-only" for="site-search"
+                        >Search the site:</label
+                    >
+                    <input
+                        type="search"
+                        id="site-search"
+                        aria-label="Search through site content"
+                        placeholder="Search Our Products"
+                    />
+                    <button class="btn btn--primary">
+                        <img src="media/search.svg" alt="Magnifying glass" />
+                    </button>
+                </div>
+            </div>
         </header>
     </body>
 </html>
