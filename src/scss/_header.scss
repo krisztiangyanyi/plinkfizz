@@ -1,0 +1,13 @@
+.fixed-top {
+    background: $header-grey;
+    height: 88px;
+    &__strapline {
+        color: $primary-blue;
+    }
+    &__contact {
+        color: $primary-orange;
+        span {
+            color: $white;
+        }
+    }
+}
