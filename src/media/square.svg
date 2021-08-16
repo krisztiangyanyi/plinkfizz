@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d25d13;
+      }
+    </style>
+  </defs>
+  <rect id="HOME_SQUARE" data-name="HOME SQUARE" class="cls-1" width="11" height="11"/>
+</svg>

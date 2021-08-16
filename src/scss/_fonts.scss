@@ -1,2 +1,4 @@
-$font-main: "Open Sans", sans-serif;
-$font-secondary: "Roboto Slab", serif;
+@font-face {
+    font-family: "ProximaNova";
+    src: url(../fonts/ProximaNova-Regular.ttf) format(truetype);
+}

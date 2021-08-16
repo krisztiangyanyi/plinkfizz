@@ -6,3 +6,8 @@
     height: 1px;
     overflow: hidden;
 }
+@include respond-to("small-max") {
+    .hide__md {
+        display: none !important;
+    }
+}

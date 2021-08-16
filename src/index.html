@@ -5,10 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/main.css" />
+        <script type="text/javascript" src="/js/main.js"></script>
         <title>Chair Company</title>
     </head>
     <body>
-        <div class="fixed-top">
+        <div class="fixed-top hide__md">
             <div class="container__1000">
                 <div class="fixed-top--box">
                     <div class="fixed-top__strapline">Strapline to go here</div>
@@ -21,23 +22,31 @@
         </div>
         <header>
             <div class="container__1000">
-                <nav class="main-nav">
-                    <ul>
-                        <li>Home</li>
-                        <li>About Us</li>
-                        <li>Services</li>
-                        <li>Products</li>
-                        <li>Sectors</li>
-                        <li>Quality</li>
-                        <li>News</li>
-                        <li>Contact</li>
-                    </ul>
-                </nav>
+                <a class="logo" href="#">Company Logo To Go Here</a>
+                <div id="mainNav" class="overlay">
+                    <a
+                        href="javascript:void(0)"
+                        class="closebtn"
+                        onclick="closeNav()"
+                        >&times;</a
+                    >
+                    <div class="overlay-content">
+                        <a href="#">Home</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Services</a>
+                        <a href="#">Products</a>
+                        <a href="#">Sectors</a>
+                        <a href="#">Quality</a>
+                        <a href="#">News</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
                 <div class="header-search">
                     <label class="sr-only" for="site-search"
                         >Search the site:</label
                     >
                     <input
+                        class="hide__md"
                         type="search"
                         id="site-search"
                         aria-label="Search through site content"
@@ -47,7 +56,74 @@
                         <img src="media/search.svg" alt="Magnifying glass" />
                     </button>
                 </div>
+                <span
+                    style="font-size: 30px; cursor: pointer"
+                    class="trigger"
+                    onclick="openNav()"
+                    >&#9776;</span
+                >
             </div>
         </header>
+
+        <footer>
+            <div class="container__1000">
+                <div class="footer__col">
+                    <ul>
+                        <li class="home">Home</li>
+                        <li class="projects">Recent Projects</li>
+                    </ul>
+                    <ul class="sectors">
+                        <li>Sectors</li>
+                        <li>Education</li>
+                        <li>Industrial</li>
+                        <li>Public Sector</li>
+                        <li>Leisure</li>
+                        <li>Health</li>
+                        <li>Professional Services</li>
+                        <li>Office</li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <ul class="furniture">
+                        <li>Furniture</li>
+                        <li>Desks</li>
+                        <li>Seating</li>
+                        <li>Tables</li>
+                        <li>Lifestyle</li>
+                        <li>Soft</li>
+                        <li>Storage</li>
+                        <li>Screens</li>
+                        <li>Reception</li>
+                        <li>Spynamics Chairs</li>
+                    </ul>
+                </div>
+                <div class="footer__col last">
+                    <ul>
+                        <li>About Us</li>
+                        <li>The Team</li>
+                        <li>Our Clients</li>
+                        <li>Accreditations</li>
+                        <li>Blog</li>
+                        <li>Contact</li>
+                        <li>Terms & Conditions</li>
+                    </ul>
+                </div>
+                <div class="footer__col address">
+                    <address>
+                        Address info here<br />
+                        1 Main Road<br />
+                        Staffordshire<br />
+                        ST00 ABC
+                        <span>T</span>
+                        <a href="tel:tel:012345 678 901">012345 678 901</a>
+                    </address>
+
+                    <div class="footer__social">
+                        <h3>Follow Us</h3>
+                        <img src="media/social.svg" alt="Social links" />
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
