@@ -38,12 +38,12 @@
 }
 
 header {
-    height: 90px;
+    height: 69px;
     display: flex;
     background: $header-lightgrey;
-    -webkit-box-shadow: 0px 1px 1px $box-shadow;
-    -moz-box-shadow: 0px 1px 1px $box-shadow;
-    box-shadow: 0px 1px 1px $box-shadow;
+    box-shadow: 0 2px 4px -1px rgb(0 0 0 / 25%);
+    position: relative;
+    z-index: 10;
     .container__1000 {
         display: flex;
         width: 100%;
@@ -52,35 +52,8 @@ header {
         align-content: center;
         flex-direction: row;
 
-        @include respond-to("small-min") {
+        @include respond-to("medium-min") {
             justify-content: space-between;
-        }
-    }
-
-    .logo {
-        color: $header-lightgrey;
-        font-weight: $bold;
-        text-transform: uppercase;
-        font-size: 16px;
-        background: $header-grey;
-        height: 90px;
-        width: 90px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: nowrap;
-        text-align: center;
-
-        @include respond-to("small-min") {
-            position: relative;
-            top: 90px;
-            height: 190px;
-            width: 190px;
-        }
-
-        &:hover {
-            color: $primary-orange;
         }
     }
 
@@ -95,7 +68,7 @@ header {
         background-color: rgba(0, 0, 0, 0.9);
         overflow-x: hidden;
         transition: 0.5s;
-        @include respond-to("small-min") {
+        @include respond-to("medium-min") {
             display: flex;
             width: unset;
             position: relative;
@@ -107,7 +80,7 @@ header {
         }
         a {
             text-align: right;
-            padding: 8px;
+            padding: 5px;
             text-decoration: none;
             font-size: 36px;
             color: $white;
@@ -115,8 +88,8 @@ header {
             transition: 0.3s;
             margin-right: 20px;
 
-            @include respond-to("small-min") {
-                font-size: 16px;
+            @include respond-to("medium-min") {
+                font-size: 13px;
                 color: $header-grey;
                 transition: none;
             }
@@ -131,21 +104,22 @@ header {
         position: relative;
         width: 100%;
         text-align: center;
-        margin-top: 30px;
-        @include respond-to("small-min") {
+        @include respond-to("medium-min") {
             display: flex;
             top: unset;
+            text-transform: uppercase;
+            align-items: center;
         }
     }
 
     span.trigger {
         font-size: 30px;
-        margin-right: 10px;
+        margin-right: 5px;
         background: $primary-blue;
         color: $white;
         padding: 10px;
         margin-left: 5px;
-        @include respond-to("small-min") {
+        @include respond-to("medium-min") {
             display: none;
         }
     }
@@ -153,6 +127,12 @@ header {
 
 .header-search {
     display: flex;
+    @include respond-to("medium-max") {
+        margin-right: 20px;
+    }
+    @include respond-to("small-max") {
+        margin-right: 0px;
+    }
     textarea:focus,
     input:focus {
         outline: none;
@@ -171,8 +151,14 @@ header {
         width: 47px;
         height: 60px;
         img {
-            position: relative;
-            right: 3px;
+            @include respond-to("small-min") {
+                position: relative;
+                right: 0px;
+            }
+            @include respond-to("small-max") {
+                position: relative;
+                right: 3px;
+            }
             height: 30px;
             width: 30px;
             filter: invert(96%) sepia(2%) saturate(259%) hue-rotate(58deg)
