@@ -232,7 +232,7 @@ footer .footer__col ul {
   margin: 0;
 }
 footer .footer__col ul li {
-  padding: 3px;
+  padding: 2px;
 }
 footer .footer__col ul li:hover {
   color: #d25d13;
@@ -261,6 +261,7 @@ footer .footer__col.address {
   margin-top: 10px;
 }
 footer address {
+  text-transform: capitalize;
   max-width: 200px;
   font-style: normal;
   margin: 0 auto;

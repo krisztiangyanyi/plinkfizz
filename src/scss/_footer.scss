@@ -24,7 +24,7 @@ footer {
             margin: 0;
 
             li {
-                padding: 3px;
+                padding: 2px;
             }
 
             li:hover {
@@ -59,6 +59,7 @@ footer {
     }
 
     address {
+        text-transform: capitalize;
         max-width: 200px;
         font-style: normal;
         margin: 0 auto;
