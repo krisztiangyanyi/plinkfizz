@@ -1,0 +1,12 @@
+.btn {
+    padding: 5px 12px;
+    color: $white;
+    border: none;
+    cursor: pointer;
+    &--primary {
+        background: $primary-blue;
+        &:hover {
+            background: darken($primary-blue, 15%);
+        }
+    }
+}
