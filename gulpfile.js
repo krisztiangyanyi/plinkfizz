@@ -18,12 +18,12 @@ function dev() {
 function watch() {
     browserSync.init({
         server: {
-            baseDir: "./src/",
+            baseDir: "./",
         },
     });
 
     gulp.watch("src/scss/**/*.scss", dev);
-    gulp.watch("./**/*.html").on("change", browserSync.reload);
+    gulp.watch("./*.html").on("change", browserSync.reload);
     gulp.watch("src/js/**/*.js").on("change", browserSync.reload);
 }
 
